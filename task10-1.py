@@ -7,7 +7,7 @@ production_model = pl.LpProblem("Production_Optimization", pl.LpMaximize)
 limonad = pl.LpVariable('Limonad', lowBound=0, cat='Integer')
 fruit_juice = pl.LpVariable('Fruit_Juice', lowBound=0, cat='Integer')
 
-# Функція мети: максимізація загальної кількості вироблених продуктів
+# Максимізація загальної кількості вироблених продуктів
 production_model += limonad + fruit_juice, "Total_Production"
 
 # Обмеження ресурсів:
